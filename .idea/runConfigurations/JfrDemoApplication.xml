@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="JfrDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <module name="jfr-demo.main" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="de.schwetschke.jfrdemo.JfrDemoApplication" />
+    <option name="VM_PARAMETERS" value="-XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=heapdump.hprof -XX:StartFlightRecording=disk=true,dumponexit=true,filename=recording.jfr,maxsize=1024m,maxage=1d,settings=profile,path-to-gc-roots=true" />
+    <option name="ALTERNATIVE_JRE_PATH" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
