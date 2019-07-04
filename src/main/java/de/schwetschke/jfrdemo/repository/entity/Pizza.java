@@ -3,6 +3,7 @@ package de.schwetschke.jfrdemo.repository.entity;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
@@ -21,5 +22,5 @@ public class Pizza {
     @ElementCollection
     @CollectionTable(name="pizza_topping", joinColumns=@JoinColumn(name="topping_id"))
     @Column(name="topping_name")
-    private List<String> toppings;
+    private List<String> toppings = new ArrayList<>();
 }
